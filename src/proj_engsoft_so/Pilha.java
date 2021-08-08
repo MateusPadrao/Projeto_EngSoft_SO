@@ -32,17 +32,18 @@ public class Pilha {
 
                 base = novo;
                 topo = novo;
+            } else if () { // caso tenha algo mas precise liberar mais memória
+
+            } else { // caso tenha algo mas não precise de mais memória
+
             }
-            
+
         }
     }
 
-    public Object desempilha() {
+    public void desempilha() {
         //pop
-        if (this.vazia()) {
-            return null;
-        }
-        return this.pilha[this.posicaoPilha--];
+
     }
 
 
