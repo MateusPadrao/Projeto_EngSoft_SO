@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner();
+        Scanner entrada = new Scanner(System.in);
         int heap, min, max;
 
         System.out.println("Tamanho da heap: ");
