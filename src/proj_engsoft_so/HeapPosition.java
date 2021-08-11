@@ -1,11 +1,12 @@
 package proj_engsoft_so;
 
-public class NoPilha {
-    public NoPilha proximo;
+public class HeapPosition {
+    public HeapPosition proximo;
     public int identificacao;
     public int tamVar;
+    public boolean pronto;
 
-    public NoPilha(int identificacao, int tamVar) {
+    public HeapPosition(int identificacao, int tamVar) {
         this.proximo = null;
         this.identificacao = identificacao;
         this.tamVar = tamVar;
