@@ -41,13 +41,26 @@ public class Heap {
                 System.out.println("Erro! Não foi possível inciar a Heap.");
             }
 
+        } else if (tamVar <= tamanhoDisp) {    // Caso haja espaço na heap
+            HeapPosition novo = new HeapPosition(identificacao, tamVar);
+
+            tamanhoDisp -= tamVar;
+            //percentageUT = (100 - ((tamanhoDisp * 100)/tamanhoTotal))/100;
+
+            fim.proximo = novo;
+            fim = novo;
+
+        } else if (tamVar >= tamanhoDisp) {    // Caso o tamanho da variável seja maior que o tamanho disponível na heap
+            desalocador();
+            alocador(identificacao, tamVar);
+
+        } else {                              // Caso desconhecido
+            System.out.println("Caso de inserção desconhecido(Heap).");
         }
     }
 
-    public void desempilha() {
-        //pop
+    public void desalocador() {  // vai precisar de metodos de espera pelos dados prontos para desalocar
 
     }
-
 
 }
